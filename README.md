@@ -48,4 +48,17 @@ rm ~/.kube/config.bak
 # rename context of rancher cluster
 kubectx rancher-cluster=local
 ```
+---
 
+### Rancher
+
+Docker setup
+```bash
+docker run -d --restart=unless-stopped \
+  --name rancher \
+  -p 80:80 -p 443:443 \
+  -v /opt/rancher:/var/lib/rancher \
+  rancher/rancher:v2.5.5 \
+  --acme-domain \
+  rancher.shubhamtatvamasi.com
+```
