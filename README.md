@@ -1,5 +1,16 @@
 # rancher
 
+### RKE
+
+Setup Node
+```bash
+# Disable swap:
+sudo swapoff -a
+
+# Install docker for rancher:
+curl https://releases.rancher.com/install-docker/19.03.sh | sh
+```
+
 https://github.com/rancher/rke/releases/tag/v1.2.5
 
 Download rke for Ubuntu:
