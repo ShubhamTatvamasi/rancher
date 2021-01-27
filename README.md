@@ -44,5 +44,8 @@ mv /tmp/config ~/.kube/config
 
 # (optional) Delete the backup once you confirm everything worked ok
 rm ~/.kube/config.bak
+
+# rename context of rancher cluster
+kubectx rancher-cluster=local
 ```
 
