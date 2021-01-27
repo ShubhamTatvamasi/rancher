@@ -20,7 +20,7 @@ Setup cluster:
 rke up
 ```
 
-Merge config file:
+Merge rancher config file:
 ```bash
 # Make a copy of your existing config
 cp ~/.kube/config ~/.kube/config.bak
