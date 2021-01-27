@@ -14,3 +14,8 @@ Generate config for RKE cluster:
 ```bash
 rke config
 ```
+
+Setup cluster:
+```bash
+rke up
+```
