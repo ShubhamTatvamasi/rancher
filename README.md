@@ -9,3 +9,8 @@ sudo wget https://github.com/rancher/rke/releases/download/v1.2.5/rke_linux-amd6
 
 sudo chmod +x /usr/local/bin/rke
 ```
+
+Generate config for RKE cluster:
+```bash
+rke config
+```
