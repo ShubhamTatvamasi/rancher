@@ -134,3 +134,7 @@ helm install rancher rancher-stable/rancher \
   --version=2.5.5
 ```
 
+Access Ingernal Services this way:
+
+https://rancher.shubhamtatvamasi.com/api/v1/namespaces/default/services/http:nginx:80/proxy/
+
