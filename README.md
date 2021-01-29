@@ -134,6 +134,18 @@ helm install rancher rancher-stable/rancher \
   --version=2.5.5
 ```
 
+Enable websocket for rancher ingress:
+```bash
+kubectl patch ingress rancher -n cattle-system \
+  --patch='{
+    "metadata": {
+      "annotations": {
+        "nginx.org/websocket-services": "rancher"
+      }
+    }
+  }'
+```
+
 Access Ingernal Services this way:
 
 https://rancher.shubhamtatvamasi.com/api/v1/namespaces/default/services/http:nginx:80/proxy/
