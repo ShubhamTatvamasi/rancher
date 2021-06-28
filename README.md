@@ -8,14 +8,14 @@ Setup Node
 sudo swapoff -a
 
 # Install docker for rancher:
-curl https://releases.rancher.com/install-docker/19.03.sh | sh
+curl https://releases.rancher.com/install-docker/20.10.sh | sh
 ```
 
-https://github.com/rancher/rke/releases/tag/v1.2.5
+https://github.com/rancher/rke/releases/tag/v1.2.9
 
 Download rke for Ubuntu:
 ```bash
-sudo wget https://github.com/rancher/rke/releases/download/v1.2.5/rke_linux-amd64 \
+sudo wget https://github.com/rancher/rke/releases/download/v1.2.9/rke_linux-amd64 \
   -O /usr/local/bin/rke
 
 sudo chmod +x /usr/local/bin/rke
