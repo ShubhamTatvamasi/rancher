@@ -13,7 +13,7 @@ curl https://releases.rancher.com/install-docker/20.10.sh | sh
 
 https://rancher.com/docs/rancher/v2.x/en/installation/requirements/installing-docker/
 
-https://github.com/rancher/rke/releases/tag/v1.2.9
+https://github.com/rancher/rke/releases/tag/v1.2.10
 
 Download rke for Ubuntu:
 ```bash
