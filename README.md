@@ -9,6 +9,8 @@ sudo swapoff -a
 
 # Install docker for rancher:
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
+
+sudo usermod -aG docker $USER
 ```
 
 https://rancher.com/docs/rancher/v2.x/en/installation/requirements/installing-docker/
