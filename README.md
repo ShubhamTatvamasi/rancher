@@ -19,7 +19,7 @@ https://github.com/rancher/rke/releases
 
 Download rke for Ubuntu:
 ```bash
-sudo wget https://github.com/rancher/rke/releases/download/v1.2.11/rke_linux-amd64 \
+sudo wget https://github.com/rancher/rke/releases/download/v1.3.0/rke_linux-amd64 \
   -O /usr/local/bin/rke
 
 sudo chmod +x /usr/local/bin/rke
