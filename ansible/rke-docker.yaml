@@ -4,8 +4,7 @@
   become_user: root
   tasks:
   - name: Installing docker
-    shell: |
-      curl https://releases.rancher.com/install-docker/20.10.sh | sh
+    shell: curl https://releases.rancher.com/install-docker/20.10.sh | sh
 
   - name: Get docker permission
     become: no
