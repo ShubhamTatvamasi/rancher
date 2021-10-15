@@ -34,6 +34,11 @@ Setup cluster:
 rke up
 ```
 
+Update `cluster.yml` for adding or removing nodes, then run:
+```bash
+rke up --update-only
+```
+
 Merge rancher config file:
 ```bash
 # Make a copy of your existing config
