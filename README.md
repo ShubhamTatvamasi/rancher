@@ -21,7 +21,7 @@ services:
       max-pods: 250
 ```
 
-https://rancher.com/docs/rancher/v2.5/en/installation/requirements/installing-docker/ \
+https://rancher.com/docs/rancher/v2.6/en/installation/requirements/installing-docker/ \
 https://github.com/rancher/rke/releases
 
 Download rke for Ubuntu:
