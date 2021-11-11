@@ -13,6 +13,14 @@ curl https://releases.rancher.com/install-docker/20.10.sh | sh
 sudo usermod -aG docker $USER
 ```
 
+Increase pod limit:
+```yaml
+services:
+  kubelet:
+    extra_args:
+      max-pods: 250
+```
+
 https://rancher.com/docs/rancher/v2.5/en/installation/requirements/installing-docker/ \
 https://github.com/rancher/rke/releases
 
