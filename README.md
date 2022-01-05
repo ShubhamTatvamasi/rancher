@@ -34,7 +34,7 @@ sudo chmod +x /usr/local/bin/rke
 
 Generate config for RKE cluster:
 ```bash
-rke config
+rke config -a
 ```
 
 Setup cluster:
