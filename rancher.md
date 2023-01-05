@@ -8,7 +8,7 @@ helm repo add rancher https://releases.rancher.com/server-charts/stable
 
 Install Rancher:
 ```bash
-helm install rancher rancher-stable/rancher \
+helm install rancher rancher/rancher \
   --namespace cattle-system \
   --set hostname=rancher.shubhamtatvamasi.com \
   --set ingress.tls.source=letsEncrypt \
