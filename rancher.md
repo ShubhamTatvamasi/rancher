@@ -9,7 +9,7 @@ helm repo update
 
 Install Rancher:
 ```bash
-helm install rancher rancher/rancher \
+helm upgrade -i rancher rancher/rancher \
   --version 2.7.0 \
   --create-namespace \
   --namespace cattle-system \
