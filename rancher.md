@@ -10,12 +10,11 @@ helm repo update
 Install Rancher:
 ```bash
 helm install rancher rancher/rancher \
+  --version 2.7.0 \
   --create-namespace \
   --namespace cattle-system \
-  --set ingress.enabled=false
-```
-
-
   --set hostname=rancher.shubhamtatvamasi.com \
+  --set tls=external \
   --set ingress.includeDefaultExtraAnnotations=false \
-  --set ingress.extraAnnotations."kubernetes.io/ingress.class"=caddy
+  --set ingress.extraAnnotations."kubernetes\.io/ingress\.class"=caddy
+```
