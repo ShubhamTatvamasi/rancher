@@ -12,7 +12,10 @@ Install Rancher:
 helm install rancher rancher/rancher \
   --create-namespace \
   --namespace cattle-system \
+  --set ingress.enabled=false
+```
+
+
   --set hostname=rancher.shubhamtatvamasi.com \
   --set ingress.includeDefaultExtraAnnotations=false \
   --set ingress.extraAnnotations."kubernetes.io/ingress.class"=caddy
-```
