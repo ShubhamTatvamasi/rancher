@@ -20,7 +20,7 @@ helm upgrade -i rancher rancher/rancher \
   --set ingress.extraAnnotations."kubernetes\.io/ingress\.class"=caddy
 ```
 
-Get password:
+Get one time password:
 ```bash
 kubectl get secret --namespace cattle-system bootstrap-secret \
   -o go-template='{{.data.bootstrapPassword|base64decode}}{{"\n"}}'
