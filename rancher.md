@@ -13,6 +13,7 @@ helm install rancher rancher/rancher \
   --version 2.7.0 \
   --create-namespace \
   --namespace cattle-system \
+  --set replicas=1 \
   --set hostname=rancher.shubhamtatvamasi.com \
   --set tls=external \
   --set ingress.includeDefaultExtraAnnotations=false \
