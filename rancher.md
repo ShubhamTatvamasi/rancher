@@ -12,6 +12,5 @@ helm install rancher rancher/rancher \
   --namespace cattle-system \
   --set hostname=rancher.shubhamtatvamasi.com \
   --set ingress.tls.source=letsEncrypt \
-  --set letsEncrypt.email=info@shubhamtatvamasi.com \
-  --version=2.5.5
+  --set letsEncrypt.email=info@shubhamtatvamasi.com
 ```
