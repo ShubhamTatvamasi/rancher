@@ -6,21 +6,10 @@ helm repo add rancher https://releases.rancher.com/server-charts/stable
 helm repo update
 ```
 
-Install Rancher with nginx:
-```bash
-helm upgrade -i rancher rancher/rancher \
-  --create-namespace \
-  --namespace cattle-system \
-  --set hostname=rancher.magma.shubhamtatvamasi.com \
-  --set ingress.includeDefaultExtraAnnotations=false \
-  --set ingress.tls.source=secret \
-  --set ingress.ingressClassName=caddy
-```
-
 Install Rancher with Caddy:
 ```bash
 helm upgrade -i rancher rancher/rancher \
-  --version 2.7.1 \
+  --version 2.7.3 \
   --create-namespace \
   --namespace cattle-system \
   --set replicas=1 \
