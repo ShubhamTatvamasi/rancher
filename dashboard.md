@@ -16,7 +16,8 @@ helm upgrade -i rancher rancher/rancher \
   --set hostname=rancher.shubhamtatvamasi.com \
   --set tls=external \
   --set ingress.includeDefaultExtraAnnotations=false \
-  --set ingress.extraAnnotations."kubernetes\.io/ingress\.class"=caddy
+  --set ingress.extraAnnotations."kubernetes\.io/ingress\.class"=caddy \
+  --set global.cattle.psp.enabled=false
 ```
 
 Get one time password:
