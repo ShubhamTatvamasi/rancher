@@ -47,6 +47,11 @@ Update `cluster.yml` for adding or removing nodes, then run:
 rke up --update-only
 ```
 
+Rotate RKE cluster certificates:
+```bash
+rke cert rotate
+```
+
 Merge rancher config file:
 ```bash
 # Make a copy of your existing config
