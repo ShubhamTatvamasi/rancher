@@ -74,9 +74,9 @@ kubectx rancher-cluster=local
 
 - Take an etcd snapshot
     ```
-    rke etcd snapshot-save --config cluster.yaml --name pre-k8s-upgrade-`date '+%Y%m%d%H%M%S'`
+    rke etcd snapshot-save --config cluster.yml --name pre-k8s-upgrade-`date '+%Y%m%d%H%M%S'`
     ```
-- Change `kubernetes_version` in the `cluster.yaml`
+- Change `kubernetes_version` in the `cluster.yml`
     ```
     kubernetes_version: "1.19.7-rancher1-1"
     ```
