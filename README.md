@@ -69,3 +69,16 @@ rm ~/.kube/config.bak
 # rename context of rancher cluster
 kubectx rancher-cluster=local
 ```
+
+### RKE Upgrade – Change
+
+- Take an etcd snapshot
+    ```
+    rke etcd snapshot-save --config cluster.yaml --name pre-k8s-upgrade-`date '+%Y%m%d%H%M%S'`
+    ```
+- Change `kubernetes_version` in the `cluster.yaml`
+    ```
+    kubernetes_version: "1.19.7-rancher1-1"
+    ```
+
+https://github.com/mattmattox/Kubernetes-Master-Class-Upgrades
