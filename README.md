@@ -8,7 +8,7 @@ Setup Node
 sudo swapoff -a
 
 # Install docker for rancher:
-curl https://releases.rancher.com/install-docker/20.10.sh | sh
+curl https://releases.rancher.com/install-docker/24.0.sh | sh
 
 sudo usermod -aG docker $USER
 ```
