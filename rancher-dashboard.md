@@ -9,7 +9,7 @@ helm repo update
 Install Rancher with Caddy:
 ```bash
 helm upgrade -i rancher rancher/rancher \
-  --version 2.7.3 \
+  --version 2.9.2 \
   --create-namespace \
   --namespace cattle-system \
   --set replicas=1 \
