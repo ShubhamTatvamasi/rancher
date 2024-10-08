@@ -6,7 +6,7 @@ helm repo add rancher https://releases.rancher.com/server-charts/stable
 helm repo update
 ```
 
-Install Rancher with Caddy:
+Install Rancher:
 ```bash
 helm upgrade -i rancher rancher/rancher \
   --version 2.9.2 \
@@ -14,6 +14,10 @@ helm upgrade -i rancher rancher/rancher \
   --namespace cattle-system \
   --set replicas=1 \
   --set hostname=rancher.shubhamtatvamasi.com \
+  --set ingress.tls.source=letsEncrypt \
+  --set letsEncrypt.ingress.class=nginx
+
+# with Caddy
   --set tls=external \
   --set ingress.includeDefaultExtraAnnotations=false \
   --set ingress.extraAnnotations."kubernetes\.io/ingress\.class"=caddy \
