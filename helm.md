@@ -1,5 +1,6 @@
 # Helm
 
+https://artifacthub.io/packages/helm/rancher-stable/rancher
 
 1. Pull upstream rancher 2.14.2 and unpack
 ```
