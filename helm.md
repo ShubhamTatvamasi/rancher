@@ -23,7 +23,7 @@ sed -i '' 's#{{- printf "%s-%s" .Chart.Name .Chart.Version | trunc 63 | trimSuff
 3. Repackage (stays version 2.14.2)
 ```bash
 cd ..
-helm package rancher            # -> rancher-2.14.2.tgz
+helm package rancher
 ```
 
 4. Log in to Harbor and push as an OCI chart
