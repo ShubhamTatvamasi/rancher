@@ -4,7 +4,12 @@
 1. Pull upstream rancher 2.14.2 and unpack
 ```
 cd /tmp
-helm pull rancher --repo https://releases.rancher.com/server-charts/stable --version 2.14.2 --untar
+
+helm pull rancher \
+  --repo https://releases.rancher.com/server-charts/stable \
+  --version 2.14.2 \
+  --untar
+
 cd rancher
 ```
 
